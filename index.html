@@ -1,1 +1,87 @@
-EnviroBotics
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meine GitHub Pages Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a242f;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Willkommen auf meiner Website</h1>
+  <p>Dies ist meine persönliche Seite auf GitHub Pages</p>
+</header>
+
+<main>
+  <h2>Über mich</h2>
+  <p>Ich bin Webentwickler mit Leidenschaft für gute Gestaltung und sauberen Code.</p>
+
+  <img src="bild.jpg" alt="Ein Beispielbild">
+
+  <h2>Kontaktiere mich</h2>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">E-Mail:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="nachricht">Nachricht:</label>
+    <textarea name="message" id="nachricht" rows="5" required></textarea>
+
+    <button type="submit">Nachricht senden</button>
+  </form>
+</main>
+
+</body>
+</html>
