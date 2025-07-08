@@ -23,11 +23,25 @@
       margin: 2rem auto;
       padding: 1rem;
     }
-    img {
-      width: 100%;
+    .bilderreihe {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .bilderreihe img {
+      width: 250px;
       height: auto;
       border-radius: 10px;
-      margin-bottom: 2rem;
+      object-fit: cover;
+    }
+
+    @media (max-width: 800px) {
+      .bilderreihe {
+        flex-direction: column;
+        align-items: center;
+      }
     }
     form {
       background: #fff;
@@ -67,16 +81,10 @@
   <p>The Environmental Robotics group invites Master’s and advanced Bachelor’s students in Engineering, Robotics, Environmental Sciences or Biology to take part in an interdisciplinary Summer School where technology meets nature.</p>
 
   <div class="bilderreihe">
-    <div class="bild-container">
-      <img src="BlueRov_3_1.jpg" alt="Bild 1">
-    </div>
-    <div class="bild-container">
-      <img src="BlueRov_3_1.jpg" alt="Bild 2">
-    </div>
-    <div class="bild-container">
-      <img src="BlueRov_3_1.jpg" alt="Bild 3">
-    </div>
-  </div>
+  <img src="BlueRov_3_1.jpg" alt="Bild 1">
+  <img src="BlueRov_3_1.jpg" alt="Bild 2">
+  <img src="BlueRov_3_1.jpg" alt="Bild 3">
+</div>
   
 
   <h2>Kontaktiere mich</h2>
