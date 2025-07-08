@@ -8,22 +8,25 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: white;
-
-      /* Hintergrundbild mittig und hochkant fixiert */
-      background-image: url('Background_1.png');
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: auto 100%; /* volle Höhe, automatische Breite */
-      background-attachment: fixed;
+      background-color: white; /* Weißer Rand */
     }
 
     .inhalt {
-      padding: 30px;
       max-width: 900px;
       margin: auto;
-      background-color: rgba(255, 255, 255, 0.8); /* leicht transparent, damit Text lesbar bleibt */
+      padding: 30px;
+
+      /* Hintergrundbild im Inhaltsbereich */
+      background-image: url('Background_1.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+
+      /* Optional: halbtransparentes Overlay für bessere Lesbarkeit */
+      background-color: rgba(255, 255, 255, 0.8);
+      background-blend-mode: lighten;
     }
+
     header {
       background-color: #2c3e50;
       color: white;
