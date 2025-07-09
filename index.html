@@ -38,6 +38,19 @@
       margin: 2rem auto;
       padding: 1rem;
     }
+
+    .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+  }
+
+   .video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+   }
     .breitbild {
     width: 100%;
     height: auto;
@@ -101,10 +114,12 @@
 <main>
   <h2>About</h2>
   <p>The Environmental Robotics group invites Master’s and advanced Bachelor’s students in Engineering, Robotics, Environmental Sciences or Biology to take part in an interdisciplinary Summer School where technology meets nature.</p>
-  <video width="800" controls>
-  <source src="Video.mp4" type="video/mp4">
-  Dein Browser unterstützt kein HTML5-Video.
+<div class="video-container">
+  <video controls>
+    <source src="Video.mp4" type="video/mp4">
+    Dein Browser unterstützt kein HTML5-Video.
   </video>
+</div>
   <h2>When?</h2>
   <p>4–5 days in September</p>
   <h2>Where?</h2>
