@@ -38,21 +38,24 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap; /* Falls es auf kleinen Bildschirmen zu eng wird */
+      flex-wrap: wrap;
       gap: 1rem;
     }
 
     .header-titel h1 {
       margin: 0;
       font-size: 2rem;
-      flex: 1;
+      flex: 1 1 80%;
       text-align: left;
     }
 
     .tum-logo {
-      height: 60px; /* Passe die Größe an dein Layout an */
+      flex: 0 0 16%; /* etwa 1/6 der Breite */
+      max-height: 40px;
+      height: auto;
       object-fit: contain;
     }
+
 
     .header-inhalt {
       max-width: 900px;
