@@ -28,13 +28,23 @@
     }
 
     header {
-     background-image: url('image.png');
-     background-size: cover;
-     background-position: center;
-     color: white;
-     padding: 4rem 2rem;
-     text-align: center;
-     position: relative;
+      background-color: #053b71;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      position: relative;
+    }
+
+    .header-inhalt {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .header-inhalt img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
     }
     header::before {
     content: "";
@@ -128,8 +138,11 @@
 <body>
 
 <header>
-  <h1>EnviroBotics Summer School 2025</h1>
-  <p>Environmental Robotics invites you: Join our Summer School at the Lake!</p>
+  <div class="header-inhalt">
+    <img src="image.png" alt="Header-Bild">
+    <h1>EnviroBotics Summer School 2025</h1>
+    <p>Environmental Robotics invites you: Join our Summer School at the Lake!</p>
+  </div>
 </header>
 
 <main>
