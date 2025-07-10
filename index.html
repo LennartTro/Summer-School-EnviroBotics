@@ -28,10 +28,26 @@
     }
 
     header {
-      background-color: #053b71;
-      color: white;
-      padding: 2rem;
-      text-align: center;
+     background-image: url('image.png');
+     background-size: cover;
+     background-position: center;
+     color: white;
+     padding: 4rem 2rem;
+     text-align: center;
+     position: relative;
+    }
+    header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* optional: dunkler Overlay für bessere Lesbarkeit */
+    z-index: 0;
+    }
+
+    header h1,
+    header p {
+    position: relative;
+    z-index: 1;
     }
     main {
       max-width: 800px;
@@ -112,7 +128,7 @@
 <body>
 
 <header>
-  <h1>Welcome to the EnviroBotics Summer School website</h1>
+  <h1>EnviroBotics Summer School 2025</h1>
   <p>Environmental Robotics invites you: Join our Summer School at the Lake!</p>
 </header>
 
