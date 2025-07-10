@@ -28,16 +28,17 @@
     }
 
     header {
-      background-color: #225f9b;
-      color: white;
+      background-color: #053b71;
       text-align: center;
       padding: 4rem 1rem;
-      position: relative;
     }
 
     .header-inhalt {
       max-width: 900px;
       margin: auto;
+      background-color: white; /* Weißer Hintergrund NUR für den Inhaltsbereich */
+      border-radius: 10px;
+      padding: 2rem;
     }
 
     .header-inhalt img {
@@ -45,6 +46,11 @@
       height: auto;
       border-radius: 10px;
       margin-bottom: 1.5rem;
+    }
+
+    .header-inhalt h1,
+    .header-inhalt p {
+      color: #2567a8; /* Textfarbe zurück zum Blau für Kontrast auf weißem Grund */
     }
     header::before {
     content: "";
