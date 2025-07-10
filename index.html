@@ -34,25 +34,24 @@
       padding: 4rem 1rem;
       position: relative;
     }
-    .header-titel {
+        .header-titel {
       display: flex;
-      justify-content: space-between;
+      justify-content: center; /* Zentriert Gesamtgruppe */
       align-items: center;
-      flex-wrap: wrap;
       gap: 1rem;
+      flex-wrap: wrap;
     }
 
     .header-titel h1 {
       margin: 0;
       font-size: 2rem;
-      flex: 1 1 80%;
-      text-align: left;
+      text-align: center;
+      flex: 0 1 auto;
     }
 
     .tum-logo {
-      flex: 0 0 16%; /* etwa 1/6 der Breite */
-      max-height: 40px;
-      height: auto;
+      flex: 0 0 auto;
+      height: 40px; /* kleiner und dezent */
       object-fit: contain;
     }
 
