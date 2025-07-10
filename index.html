@@ -34,6 +34,25 @@
       padding: 4rem 1rem;
       position: relative;
     }
+    .header-titel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* Falls es auf kleinen Bildschirmen zu eng wird */
+      gap: 1rem;
+    }
+
+    .header-titel h1 {
+      margin: 0;
+      font-size: 2rem;
+      flex: 1;
+      text-align: left;
+    }
+
+    .tum-logo {
+      height: 60px; /* Passe die Größe an dein Layout an */
+      object-fit: contain;
+    }
 
     .header-inhalt {
       max-width: 900px;
@@ -128,7 +147,10 @@
 <header>
   <div class="header-inhalt">
     <img src="image.png" alt="Header-Bild">
-    <h1>EnviroBotics Summer School 2025</h1>
+    <div class="header-titel">
+      <h1>EnviroBotics Summer School 2025</h1>
+      <img src="TUM_Logo_extern_ot_RGB_neg_p.png" alt="TUM Logo" class="tum-logo">
+    </div>
     <p>Environmental Robotics invites you: Join our Summer School at the Lake!</p>
   </div>
 </header>
