@@ -29,61 +29,36 @@
 
     header {
       background-color: #053b71;
-      color: white;
-      text-align: center;
       padding: 4rem 1rem;
-      position: relative;
     }
-        .header-titel {
-      display: flex;
-      justify-content: center; /* Zentriert Gesamtgruppe */
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .header-titel h1 {
-      margin: 0;
-      font-size: 2rem;
-      text-align: center;
-      flex: 0 1 auto;
-    }
-
-    .header-inhalt {
-    max-width: 900px;
-    margin: auto;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2rem;
-    position: relative; /* für absolut positioniertes Logo */
-    }
-
-    .header-inhalt h1 {
-    text-align: center;
-    margin: 0;
-    }
-
-    .tum-logo {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    height: 30px; /* klein & dezent */
-    width: auto;
-    }
-
-
-
 
     .header-inhalt {
       max-width: 900px;
       margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      position: relative;
+      text-align: center;
     }
 
-    .header-inhalt img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
+    .header-inhalt h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #053b71;
+    }
+
+    .header-inhalt p {
+      color: #053b71;
+      margin-top: 0.5rem;
+    }
+
+    .tum-logo {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      height: 30px;
+      width: auto;
     }
    
     main {
@@ -165,11 +140,11 @@
 <body>
 
 <header>
- <div class="header-inhalt">
-  <img src="TUM_Logo_extern_ot_RGB_neg_p.png" alt="TUM Logo" class="tum-logo">
-  <h1>EnviroBotics Summer School 2025</h1>
-  <p>Environmental Robotics invites you: Join our Summer School at the Lake!</p>
-</div>
+  <div class="header-inhalt">
+    <img src="TUM_Logo_extern_ot_RGB_neg_p.png" alt="TUM Logo" class="tum-logo">
+    <h1>EnviroBotics Summer School 2025</h1>
+    <p>Environmental Robotics invites you: Join our Summer School at the Lake!</p>
+  </div>
 </header>
 
 <main>
